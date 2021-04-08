@@ -39,9 +39,9 @@ class Surveys extends CI_Controller {
 			redirect("/");
 		}
 		else{
-			$this->session->unset_userdata("erro_name");
-			$this->session->unset_userdata("erro_dojo_location");
-			$this->session->unset_userdata("erro_fave_language");
+			$this->session->unset_userdata("error_name");
+			$this->session->unset_userdata("error_dojo_location");
+			$this->session->unset_userdata("error_fave_language");
 
 			if(($this->session->userdata("counter")) == NULL)
 				$this->session->set_userdata("counter", 0);
